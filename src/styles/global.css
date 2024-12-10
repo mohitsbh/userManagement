@@ -1,0 +1,37 @@
+/* Define common styles */
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Light Mode Variables */
+  .light-mode {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #3498db;
+  }
+  
+  /* Dark Mode Variables */
+  .dark-mode {
+    --bg-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --primary-color: #1abc9c;
+  }
+  
+  /* Apply variables */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
